@@ -23,20 +23,10 @@ import I13 from '../assets/interior-shot-cafe-with-chairs-near-bar-with-wooden-t
 import vivienda from '@/assets/Slider-God nuevo 1.png';
 import juegos from '@/assets/Slider-God nuevo 2.png';
 import anios from '@/assets/60_anios_logo.webp';
-import fachada from '@/assets/FACHADA.webp';
 import { About } from "@/components/about/About";
 import { Gallery } from "@/components/gallery/Gallery";
+import { Modelo } from "@/components/modelo/Modelo";
 
-
-const images = [
-  '1.png',
-  '2.png',
-  '3.png',
-  '4.png',
-  '5.png',
-  '6.png',
-  // Agrega más imágenes según sea necesario
-];
 
 
 export default function Home() {
@@ -48,31 +38,13 @@ export default function Home() {
         <About />
       </section>
 
-      <section className="mt-40 h-screen">
-        <Gallery images={images} />
+      <section>
+        <Gallery />
       </section>
 
 
       <div className="mt-60">
-        <div className="container mx-auto flex">
-          <div>
-            <Image src={fachada} alt="" />
-          </div>
-          <div>
-            <h3 className="text-5xl">Modelo Aire</h3>
-            <div className="flex-col">
-              <div>
-                <div>
-                  
-                  <span></span>
-                </div>
-              </div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
+        <Modelo />
       </div>
 
 
