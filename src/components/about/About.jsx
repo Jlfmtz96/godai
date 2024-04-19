@@ -11,8 +11,9 @@ export const About = () => {
     <div className="container mx-auto">
         <div className="grid grid-cols-2 gap-8 px-20">
             <div>
-                <div>
-                  <span className="uppercase font-bold text-blue-900 text-4xl">TU CASA EN LA MEJOR ZONA</span>
+                <div className="text-center relative">
+                    <h1 className="font-bold text-9xl text-blue-900 opacity-20 uppercase">Godai</h1>
+                    <span className="font-bold text-blue-900 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-nowrap">Tu casa en la mejor zona</span>
                 </div>
                 <div className="rounded-xl w-full h-full mt-12">
                     <Image src={juegos} alt="" className="w-full h-full object-cover rounded-xl"/>
@@ -27,7 +28,7 @@ export const About = () => {
                 </div>
                 <div className="flex justify-between mt-4 px-16">
                     <div className="text-center relative">
-                        <h1 className="font-bold text-9xl text-blue-900 opacity-20">75</h1>
+                        <h3 className="font-bold text-9xl text-blue-900 opacity-20">75</h3>
                         <span className="font-bold text-blue-900 text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-nowrap">Familias felices</span>
                     </div>
                     <div className="drop-shadow-2xl">

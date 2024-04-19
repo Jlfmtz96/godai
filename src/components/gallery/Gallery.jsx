@@ -8,6 +8,10 @@ import { useRef } from "react";
 export const Gallery = () => {
   return (
     <div>
+      <div className="text-center relative">
+          <h1 className="font-bold text-9xl text-blue-900 opacity-20 uppercase">Amenidades</h1>
+          <span className="font-bold text-blue-900 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-nowrap">Aquí tus nuevos días</span>
+      </div>
       {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll down
@@ -59,7 +63,7 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-bold uppercase text-white backdrop-blur-lg">
           {card.title}
         </p>
       </div>
@@ -69,38 +73,38 @@ const Card = ({ card }) => {
 
 const cards = [
   {
-    url: "/imgs/abstract/1.jpg",
-    title: "Title 1",
+    url: "/images/1.png",
+    title: "Acceso controlado",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
+    url: "/images/4.jpg",
+    title: "Alberca",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
+    url: "/images/Casa-club.webp",
+    title: "Casa Club",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
+    url: "/images/gym.webp",
+    title: "Gimnasio",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
+    url: "/images/juegos-inf.webp",
+    title: "Juegos",
     id: 5,
   },
   {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
+    url: "/images/3.png",
+    title: "Áreas verdes",
     id: 6,
   },
   {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
+    url: "/images/alberca.webp",
+    title: "Godai",
     id: 7,
   },
 ];
