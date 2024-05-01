@@ -8,10 +8,10 @@ import { useRef } from "react";
 export const Gallery = () => {
   return (
     <div>
-      <div className="text-center relative">
+      {/* <div className="text-center relative">
           <h1 className="font-bold text-9xl text-blue-900 opacity-20 uppercase">Amenidades</h1>
           <span className="font-bold text-blue-900 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-nowrap">Aquí tus nuevos días</span>
-      </div>
+      </div> */}
       {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll down
@@ -52,7 +52,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[820px] w-[1410px] overflow-hidden bg-neutral-200 rounded-2xl"
+      className="group relative h-[820px] w-[1410px] overflow-hidden bg-neutral-200"
     >
       <div
         style={{

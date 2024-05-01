@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 
 import Godai from '@/assets/Godai-RGB-logo.png'
 import HeroImg from '@/assets/1.webp'
+import { TextParallaxContent } from '../section/TextParallaxContent'
 
 const navigation = [
     { name: 'NOSOTROS', href: '#' },
@@ -43,22 +44,30 @@ export const Hero = () => {
     // Cleanup
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
     return (
         <div className="bg-white">
-            <div className="lg:h-screen overflow-hidden bg-black">
-                <Image src={HeroImg} width={1920} height={960} alt='' className='w-full h-screen object-cover' />
+            <TextParallaxContent
+            mediaUrl= "./1.webp"
+            subheading="Godai"
+            heading="Vive como mereces"
+            heading2="Vive GODAI"
+            isVideo={false}
+            >
+            {/* <ExampleContent /> */}
+            </TextParallaxContent>
+            {/*<div className="lg:h-screen overflow-hidde">
+                 <Image src={HeroImg} width={1920} height={960} alt='' className='w-full h-screen object-cover' />
                 
                 <button onClick={openModal} className="absolute w-20 h-20 flex items-center justify-center lg:left-[1025px] lg:top-[215px] 2xl:left-[1280px] 2xl:top-[215px]">
-                    {/* Círculo exterior */}
+                    // Círculo exterior 
                     <div className="absolute w-full h-full rounded-full border border-white"></div>
-                    {/* Círculo intermedio */}
+                    // Círculo intermedio 
                     <div className="absolute w-16 h-16 rounded-full bg-transparent border border-white"></div>
-                    {/* Círculo interior */}
+                    // Círculo interior 
                     <div className="absolute w-12 h-12 rounded-full bg-white"></div>
-                    {/* Contenido del botón, como un ícono de reproducción */}
+                    // Contenido del botón, como un ícono de reproducción 
                     <svg className="w-8 h-8 text-black transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        {/* Aquí he agregado una rotación de 90 grados para que el icono apunte hacia la derecha */}
+                        // Aquí he agregado una rotación de 90 grados para que el icono apunte hacia la derecha *
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" transform="rotate(90 12 12)" d="M5 12l10-6v12l-10-6z"></path>
                     </svg>
                 </button>
@@ -69,17 +78,17 @@ export const Hero = () => {
                             <button onClick={closeModal} className="absolute top-20 right-20 text-white hover:text-gray-900">
                                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                             </button>
-                            {/* Aquí puedes colocar el reproductor de video con tu video local */}
+                            // Aquí puedes colocar el reproductor de video con tu video local 
                             <video controls className="w-full" autoPlay>
                                 <source src="/GOD_03-04-24.mp4" type="video/mp4" />
                                 Tu navegador no soporta el elemento de video.
                             </video>
                         </div>
                     </div>
-                </Dialog>
+                </Dialog> 
 
                 
-            </div>
+            </div>*/}
             <header className="fixed inset-x-0 top-0 z-50">
                 <nav className={`flex items-center justify-between lg:px-8 ${scrolled ? 'bg-white text-blue-900 p-2 transition-all duration-300' : 'bg-transparent text-white p-6'}`} aria-label="Global">
                     <div className="flex lg:flex-1">
@@ -154,7 +163,7 @@ export const Hero = () => {
                 </Dialog>
             </header>
 
-            <div className="absolute left-12 top-1/2 transform -translate-y-1/2">
+            {/* <div className="absolute left-12 top-1/2 transform -translate-y-1/2">
                 <div className='px-10 py-10 bg-transparent backdrop-blur-lg shadow-2xl rounded-2xl'>
                     <h2 className='font-bold text-4xl lg:text-7xl text-white drop-shadow-2xl drop'>DESPIERTA <br /> UNA <span className='text-blue-900'>NUEVA</span> <br /> <span className='text-blue-900'>CIUDAD</span> <br /> EN IRAPUATO</h2>
                     
@@ -169,7 +178,7 @@ export const Hero = () => {
 
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

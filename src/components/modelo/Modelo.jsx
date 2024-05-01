@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 
-import fachadaAire from '@/assets/fachadaAire.webp';
-import fachadaMadera from '@/assets/fachadaMadera.webp';
+import fachadaAire from '@/assets/Aire.webp';
+import fachadaMadera from '@/assets/Madera.webp';
 import fachadaAgua from '@/assets/fachadaAgua.webp';
 import fachadaTierra from '@/assets/fachadaTierra.webp';
 
@@ -138,9 +138,6 @@ export const Modelo = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
-            <div className="bg-slate-100 w-full h-96 rounded-2xl">
-                <Image src={Tren} alt="" className="w-full h-full object-cover rounded-2xl"/>
             </div>
         </div>
     )
